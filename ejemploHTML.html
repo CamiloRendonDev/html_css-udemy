@@ -1,0 +1,174 @@
+<!DOCTYPE html> <!---etiqueta que no necesita cierre, facilita informacion al servidor WEB que aloja las páginas,
+indica el tipo de documento, es necesaria para la comunicacion estre navegador y servidor web-->
+
+<html lang="en"> <!--Etiqueta par, encierra todo el documento HTML-->
+
+<head><!--Etiqueta par "cabecera", contiene informacion importa que no es visible por el usuario-->
+    <!--Etiqueta meta, usada por los buscadores, para validar informacion "idioma,"-->
+    <meta charset="UTF-8"> <!-- atributo a la etiqueta, charset para idioma y caracteres especiales-->
+    <meta  http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--name=tipo de dato content "informacion"-->
+    <meta name="author" content="Camilo Rendón Restrepo">
+    <meta name="description" content="Descripcion del sitio WEB">
+    <meta name="keywords" content="nuevo,html,pruebas">
+    <title>Mi página web</title>
+    <link rel="icon" href="img/icono.jpg"> <!--vincular  hojas de estilos, icono-->
+</head>
+
+<body><!--Etiqueta par,  "Cuerpo",Esto si es visible para los navegadores-->
+
+    <!-- cabezote-->
+    <header>cabezote
+
+    <!--DIV hacer cajas-->
+    
+    <div id="logotipo">LOGOTIPO</div>
+    </header>
+    
+    <!--barra de navegación-->
+    <nav>barra de navegación
+
+    </nav>
+
+    <!--seccion del sitio-->
+    <section>seccion del sitio
+
+    </section>
+
+    <!--aside identificar columnas-->
+    <aside>aside identificar columnas
+
+    </aside>
+
+    <!--arciculos-->
+    <article>arciculos
+
+    </article>
+
+    <!--titulos-->
+    <h1>titulos
+
+    </h1>
+
+    <!--parrafos-->
+    <p> <b>parrafos en negrilla</b>,<br> salto de linea, <hr>interlineado en la pagina, <a href="www.google.com">vinculo</a> 
+
+    </p>
+
+    <!--imagnenes-->
+    <figure>
+        <img src="img/icono.jpg" alt="">    
+    </figure>
+    <figcaption>pie de pagina a la imagen</figcaption>
+    
+
+    <!--lista organizada o numerica-->
+    <ol>
+        <li>carro</li>
+        <li>barco</li>
+        <li>avion</li>
+    </ol>
+
+    <!-- no numerica-->
+    <ul>
+        <li>carro</li>
+        <li>barco</li>
+        <li>avion</li>
+    </ul>
+
+    <!--tablas-->
+    <table border="1">
+
+        <thead>titulos de la tabla "Cabecera"</thead>
+        <!--filas-->
+        <tr>
+            <!--columnas-->
+            <th>MES</th>
+            <th>año</th>
+        </tr>
+
+        <tbody>
+        <tr>
+            <!--columnas-->
+            <td>enero</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <!--columnas-->
+            <td>febrero</td>
+            <td>2000</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <h1>resultados de examen</h1>
+    <!-- indicadores-->
+    <p>carlos: <meter value="94" min="0" max="100" high="90" low="45"></meter> </p>
+    <p>andres <meter value="60" min="0" max="100" high="90" low="45"></meter></p>
+    <p>ana <meter value="10" min="0" max="100" high="90" low="45"></meter></p>
+    
+    <h2>resultado de ventas</h2>
+    <p>Enero: <progress value="94" min="0" max="100"></progress>  </p>
+    <p>Febrero: <progress value="64" min="0" max="100"></progress>  </p>
+    <p>Marzon: <progress value="14" min="0" max="100"></progress>  </p>
+    <!--pie de pagina-->
+    <footer> derechos de autor 2022 camilo R</footer>
+
+    <!--audio en la pagina formato= OGGvorbis, mp3, WAV, acc(m4a)-->
+    <audio src="" autoplay controls loop preload="auto"></audio>
+
+    <!--   video .ogg .mp4-->
+    <video src="" width="500" height="500"></video>
+
+    <!--IFRAME insertar documentos o videos por medio de link externo-->
+    <iframe src="https://www.youtube.com/embed/XikjyfwlL5c" frameborder="0"></iframe>
+    <iframe src="https://www.caracoltv.com/senal-vivo" frameborder="0" allowfullscreen height="500" width="500" scrolling="auto"></iframe>
+    
+    <!--Formularios-->
+    <center><h3>formulario</h3>
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Escriba su nombre" >
+
+        <br>
+        <br>
+
+        <label for="correo">correo</label>
+        <input id="correo" type="email" placeholder="Escriba su correo" >
+
+        <br>
+        <br>
+
+        <label for="contra">contraseña</label>
+        <input id="contra" type="password" placeholder="Escriba su clave" >
+
+        <br>
+        <br>
+
+        <label for="numero">numero</label>
+        <input id="numero" type="number" value="1" min="0"  max="10">
+
+        <select name="" id="">
+            <option value="">opcion 1</option>
+            <option value="">opcion 2</option>
+        </select>
+
+        <br>
+        <br>
+
+        
+        <input  type="checkbox" id="rojo" > <label for="rojo">rojo</label>
+        <input  type="checkbox" id="verde" > <label for="verde">verde</label>
+
+        
+        <input  type="radio" id="blanco" name="radio"  required> <label for="rojo">rojo</label>
+        <input  type="radio" id="negro" name="radio" required> <label for="verde">verde</label>
+
+        <br>
+        <input type="submit" value="formulario">
+
+
+    </form>
+    </center>
+</body>
+</html>
